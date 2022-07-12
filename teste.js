@@ -1,11 +1,19 @@
+console.log("Hello world!");
 
 
-// var y = 0 ; codigo comentado 
 
+function returnEvenValues(array){ 
 
-var preco = 2; 
-var desconto = 0.2; // sao variaveis 
-const PRECO = 2; //preco e uma constante
+    let evenNums=[];
+    for(let i = 0; i < array.length ; i++){ 
 
+        if(array[i] % 2 === 0){ 
+            evenNums.push(array[i]);
+        }
+    }
+    console.log('Numeros pares são',evenNums);
 
-var total = PRECO - desconto; 
+}
+
+let array = [1,2,4,5,8,10];
+returnEvenValues(array);
